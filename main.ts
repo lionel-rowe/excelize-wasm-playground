@@ -1,8 +1,8 @@
-import { init } from 'npm:excelize-wasm'
+import { init } from 'excelize-wasm'
 import { fromFileUrl } from 'jsr:@std/path'
 import { inspectBytes } from 'jsr:@li/custom-inspects'
 
-const wasmUrl = new URL('excelize.wasm.gz', import.meta.resolve('npm:excelize-wasm'))
+const wasmUrl = new URL('excelize.wasm.gz', import.meta.resolve('excelize-wasm'))
 const wasmPath = fromFileUrl(wasmUrl)
 
 const excelize = await init(wasmPath)

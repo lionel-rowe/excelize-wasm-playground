@@ -1,7 +1,9 @@
 {
 	"lock": false,
 	"tasks": {},
-	"imports": {},
+	"imports": {
+		"excelize-wasm": "npm:excelize-wasm"
+	},
 	"fmt": {
 		"semiColons": false,
 		"useTabs": true,
